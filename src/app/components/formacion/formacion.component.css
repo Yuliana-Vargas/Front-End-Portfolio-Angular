@@ -1,0 +1,51 @@
+.formation{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,20rem), 1fr));
+    width:90vw;
+    min-width: 310px;
+    align-content: center;
+    margin:auto;
+}
+
+.title{
+    color:white;
+    font-size: 2rem;
+}
+
+.btn-right{  
+    border-radius:50%;  
+    color: crimson;
+    font-size: 1.5rem;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(3, 3, 3, 0.9);
+    border-radius:20px;
+    justify-content:center;
+
+}
+
+.card{
+    color:white;
+    text-align: center;
+
+}
+.card h4{
+    color: white;
+}
+
+.card ul li{
+    list-style-type: none;
+}
+
+.fecha{
+    color: white;
+    font-style: italic;
+    font-size: 1rem;
+}

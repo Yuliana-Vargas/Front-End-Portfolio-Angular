@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+*, *::after, *::before{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/img/3.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container{
+    display: grid;
+    grid-gap: 15rem;
+    align-content: center;
+}
+
+

@@ -1,0 +1,157 @@
+/* nav styling **************************************/ 
+.header{
+    height: 80px;
+    position:fixed;
+    width:100vw;
+    top: 0;
+    left:0;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    display:flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width:max-content;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover{
+    color: crimson;
+    transition: .4s;
+}
+
+.nav-btn-login:hover{
+    transform: scale(1.2);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-btn-login{
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    margin: 20px;
+    border-radius: 30px;
+    transition: transform .4s;
+    line-height: 40px;
+    
+}
+
+.gg-menu-grid-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+}
+.gg-menu-grid-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    box-shadow:
+        0 6px 0,
+        6px 6px 0,
+        12px 6px 0,
+        6px 12px 0,
+        12px 12px 0,
+        6px 0 0,
+        12px 0 0,
+        0 12px 0
+    ;
+    border-radius: 22px;
+
+}
+.nav-toggle{
+    color:crimson;
+    background:none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display:none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .body{
+        padding-top: 60px;
+    }
+
+    .header{
+        height: 60px;
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: black;
+        position:fixed;
+        left: 0;
+        top:60px;
+        width:100vw;
+        padding:20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height:70px;
+    }
+    .nav-menu-link:hover{
+        color: crimson;
+        transition: .4s;
+    }
+
+    .nav-toggle{
+        display:block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+}

@@ -11,6 +11,7 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
+    min-width: 370px;
 }
 
 .nav-menu{
@@ -102,12 +103,14 @@
 
 
 @media (max-width: 768px) {
+   
     .body{
         padding-top: 60px;
     }
 
     .header{
         height: 60px;
+ 
     }
     
     .logo{
@@ -115,7 +118,8 @@
         padding: 0 20px;
         line-height: 60px;
     }
-    
+   
+
     .nav-menu{
         flex-direction: column;
         align-items: center;
@@ -133,6 +137,7 @@
 
         left: 100%;
         transition: left 0.3s;
+        min-width: 370px;
     }
     
     .nav-menu-item{
